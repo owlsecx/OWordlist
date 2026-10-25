@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-Advanced OSINT-based wordlist generator for Debian Linux ║
+
+OWordlist is a targeted wordlist generator and manager for authorized password-auditing engagements. It builds custom wordlists from profile inputs, applies mutation and leetspeak rules, and merges, filters and deduplicates existing lists. It runs offline so audit material never leaves the host.
 
 ---
 
 ## ✨ Features
 
-- Lab-oriented custom wordlist generator from target profiling and pattern permutations
+
+- Custom wordlist generation from profile keywords and patterns
+- Mutation rules (case, leetspeak, affixes, year/number suffixes)
+- Merge, filter, sort and deduplicate existing wordlists
+- Length and complexity constraints to shape output
+- Offline operation for sensitive audit material
+- Structured export of generated lists, with a --self-test mode
 
 ---
 
@@ -37,8 +44,11 @@ Advanced OSINT-based wordlist generator for Debian Linux ║
 
 ## 🚀 Usage
 
+
 ```bash
 ./OWordlist
+./OWordlist --self-test
+./OWordlist --help
 ```
 
 ---
